@@ -1,59 +1,66 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="viewport" content="width=520, initial-scale=1" />
     <title>cubik.jp</title>
     <style>
       @font-face {
-        font-family: PixelMplus10 Regular;
+        font-family: PixelMplus10_Regular;
         src: url("fonts/PixelMplus10-Regular_web.woff") format("woff");
       }
 
-      html,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: PixelMplus10_Regular, sans-serif;
+        -webkit-font-smoothing: none;
+        background: #014;
+        background-image: url("images/photo-1462331940025-496dfbfc7564.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+
       body {
         margin: 0;
         padding: 0;
       }
 
-      body {
-        background: #666;
-        font-family: PixelMplus10 Regular;
-        -webkit-font-smoothing: none;
+      h1,
+      #icon,
+      #bio,
+      #profile {
+        margin: 40px 0 0 40px;
       }
 
       h1,
       #bio p,
       #profile li {
         padding: 0;
-        margin: 0;
-        background-color: #ddd;
+        background-color: #fff;
         letter-spacing: 0;
       }
 
       h1 {
         width: 156px;
         height: 40px;
-        margin: 40px 0 0 40px;
         line-height: 36px;
         font-size: 40px;
         font-weight: 500;
       }
 
       img#icon {
-        margin: 40px 0 0 40px;
-        background-color: #ddd;
+        background-color: #fff;
         float: left;
       }
 
       div#bio {
-        margin: 40px 0 0 40px;
         float: left;
       }
 
       #bio p,
       #profile li {
         height: 20px;
-        margin: 10px 0 20px 0;
+        margin: 0 0 20px 0;
         font-size: 20px;
       }
 
@@ -77,8 +84,11 @@
         width: 260px;
       }
 
-      div#profile {
-        margin: 40px 0 0 40px;
+      .clear-both {
+        clear: both;
+      }
+
+      #profile {
         clear: both;
       }
 
@@ -89,8 +99,9 @@
       }
 
       #profile li {
-        float: left;
         margin-right: 20px;
+        display: inline-block;
+        width: auto;
       }
 
       #profile li a {
@@ -117,6 +128,7 @@
       <p id="bio3">みんなの心に電流が流れる！！！</p>
       <p id="bio4">ジャーーーーン！！！！！！</p>
     </div>
+    <div class="clear-both"></div>
     <div id="profile">
       <ul>
         <li>なまえ：きゅーぶ</li>
